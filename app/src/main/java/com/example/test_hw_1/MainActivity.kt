@@ -12,7 +12,7 @@ import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
 
-    // ✅ 定義手勢常數（避免使用 0/1/2）
+    //定義手勢常數（避免使用 0/1/2）
     private val SCISSOR = 0
     private val STONE = 1
     private val PAPER = 2
@@ -57,7 +57,7 @@ class MainActivity : AppCompatActivity() {
             tvMyMora.text = "我方出拳\n${getMoraString(myMora)}"
             tvTargetMora.text = "電腦出拳\n${getMoraString(targetMora)}"
 
-            // ✅ 語意化勝負判斷
+            //語意化勝負判斷
             when {
                 myMora == targetMora -> {
                     tvWinner.text = "勝利者\n平手"
