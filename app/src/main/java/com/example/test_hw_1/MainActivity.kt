@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity() {
             }
 
             val playerName = edName.text.toString()
-            val targetMora = (SCISSOR..PAPER).random()   // ✅ 取 0~2 更語意化
+            val targetMora = (SCISSOR..PAPER).random()   //取 0~2 更語意化
 
             val myMora = when (radioGroup.checkedRadioButtonId) {
                 R.id.btn_scissor -> SCISSOR
